@@ -1,13 +1,6 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:react/recommended"
-  ],
-  "plugins": [
-    "react",
-    "import-alias",
-    "import"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:react/recommended"],
+  "plugins": ["react", "import-alias", "import"],
   "env": {
     "browser": true,
     "es2021": true
@@ -27,14 +20,8 @@
         "allowTemplateLiterals": true
       }
     ],
-    "jsx-quotes": [
-      "error",
-      "prefer-double"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": ["error", "always"],
     "no-unused-vars": [
       "error",
       {
@@ -42,17 +29,9 @@
         "varsIgnorePattern": "^_"
       }
     ],
-    "no-var": [
-      "warn"
-    ],
-    "max-len": [
-      "warn",
-      120
-    ],
-    "comma-dangle": [
-      "error",
-      "never"
-    ],
+    "no-var": ["warn"],
+    "max-len": ["warn", 120],
+
     "import/no-unresolved": "off",
     "react/jsx-filename-extension": 0,
     "react/jsx-indent": [

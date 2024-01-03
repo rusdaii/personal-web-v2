@@ -6,14 +6,17 @@ import { getQueryClient } from '@/lib/queryClient';
 import { getUsersKey } from '@/query/user';
 import { getUsers } from '@/repositories/user';
 
-export const metadata = generateMetadata({ title: 'Home' }, { withSuffix: true });
+export const metadata = generateMetadata(
+  { title: 'Home' },
+  { withSuffix: true }
+);
 
 const HomePage = async () => {
   const queryClient = getQueryClient();
 
   await queryClient.prefetchQuery({
     queryKey: getUsersKey(),
-    queryFn: getUsers
+    queryFn: getUsers,
   });
 
   return (
